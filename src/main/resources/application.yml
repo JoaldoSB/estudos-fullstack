@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/estudo  # nome do seu banco de dados
+    username: postgres                                # usuário do banco de dados
+    password: toor                                  # senha do banco de dados
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update                                   # Opções: validate | update | create | create-drop
+    show-sql: true                                       # Exibe as queries SQL no console
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect # Define o dialeto para o PostgreSQL
